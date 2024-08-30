@@ -14,6 +14,7 @@ public class Tarea_Github {
 
     public static void main(String[] args) {
        Scanner scanner = new Scanner(System.in);
+       Saludar saludar = new Saludar();
 
  
         System.out.print("Ingresa el primer numero: ");
@@ -28,6 +29,8 @@ public class Tarea_Github {
         
         int resultado = suma.sumar();
         System.out.println("La suma de " + n1 + " y " + n2 + " es: " + resultado);
+        
+        saludar.saludar();
     }
 }
 
