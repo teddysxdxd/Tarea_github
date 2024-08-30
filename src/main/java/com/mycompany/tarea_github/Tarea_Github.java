@@ -4,6 +4,8 @@
 
 package com.mycompany.tarea_github;
 
+import java.util.Scanner;
+
 /**
  *
  * @author USUARIO
@@ -11,11 +13,21 @@ package com.mycompany.tarea_github;
 public class Tarea_Github {
 
     public static void main(String[] args) {
-        System.out.println("Hello Wodfsfdrld!");
-        System.out.println("sexo xd");
-        System.out.println("javier gay");
-        System.out.println("no importa yo guapo");
-        System.out.println("no importa yo feo");
+       Scanner scanner = new Scanner(System.in);
+
+ 
+        System.out.print("Ingresa el primer numero: ");
+        int n1 = scanner.nextInt();
+
+        System.out.print("Ingresa el segundo numero: ");
+        int n2 = scanner.nextInt();
+
         
+        Suma suma = new Suma(n1, n2);
+
+        
+        int resultado = suma.sumar();
+        System.out.println("La suma de " + n1 + " y " + n2 + " es: " + resultado);
     }
 }
+
